@@ -1,9 +1,16 @@
 import React from 'react';
-import "../styles/components/App.scss"
+import "./App.scss"
+import Card from "./Card/Card";
+
 function App() {
   return (
-    <div></div>
+    <div className="App">
+      <header className="App-header">
+        <Card></Card>
+      </header>
+    </div>
   );
 }
 
 export default App;
+
