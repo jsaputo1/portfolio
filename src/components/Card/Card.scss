@@ -1,1 +1,65 @@
-@import "/styles/shared.scss";
+@import "../../styles/shared.scss";
+
+.card-container {
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 350px;
+
+  box-shadow: 0 1px 4px grey;
+}
+
+.card-figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #000000;
+  padding: 10px;
+  a {
+    color: #000000;
+    &:hover {
+      color: black;
+      opacity: 0.5;
+    }
+  }
+}
+
+img {
+  border: 2px solid #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 250px;
+  width: 300px;
+}
+
+.card-second-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: 600;
+  padding: 0px 10px;
+}
+.website-links {
+  i {
+    font-size: 1.5rem;
+    padding: 0px 15px;
+  }
+}
+
+.card-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 0px 10px;
+  margin-bottom: 15px;
+}
+
+.card-description-title {
+  font-weight: 600;
+  font-size: 1rem;
+}

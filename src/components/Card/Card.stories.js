@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 
 export default {
-  card: "Card",
+  title: "Card",
   component: Card,
 };
 
