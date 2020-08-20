@@ -1,12 +1,6 @@
 @import "../../styles/shared.scss";
 
 .card-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-wrapper {
   border: 2px solid black;
   border-radius: 7px;
   width: 350px;
