@@ -1,16 +1,13 @@
 import React from 'react';
 import "./App.scss";
 import Card from "./Card/Card";
-import projectDataObject from "../data/projects";
+import frontEndProjects from "../data/projects";
 
 function App() {
 
   let data = {};
-  for (let key in projectDataObject) {
-    let newObj = projectDataObject[key];
-    for (let key in newObj) {
-      data = newObj[key];
-    }
+  for (let key in frontEndProjects) {
+    data = frontEndProjects[key];
   }
 
   return (
