@@ -1,5 +1,6 @@
 import React from 'react';
 import "./App.scss";
+import Header from "./Header/Header";
 import Card from "./Card/Card";
 import frontEndProjects from "../data/projects";
 // import fullStackProjects from "../data/projects";
@@ -8,6 +9,9 @@ import retrieveData from "../helpers/retrieveData";
 
 
 function App() {
+
+  const githubLink = "https://github.com/jsaputo1/";
+  const email = "jsaputo1@gmail.com";
 
   const frontEndData = retrieveData(frontEndProjects);
   // const backendData = retrieveData(backendProjects);
@@ -49,8 +53,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <div className="App-header">
+        <Header
+          githubLink={githubLink}
+          email={email}
+        />
+      </div>
       <section class="front-end-projects">
         {frontEndJsx}
       </section>
