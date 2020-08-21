@@ -1,13 +1,11 @@
 @import "../styles/shared.scss";
 
-.App {
-  display: flex;
-  justify-content: center;
+.App-header {
+  margin-bottom: 20px;
 }
 
 .front-end-projects {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-
 }
