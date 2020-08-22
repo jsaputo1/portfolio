@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.scss";
 import Header from "./Header/Header";
 import Card from "./Card/Card";
+import Category from "./Category/Category"
 import frontEndProjects from "../data/projects";
 // import fullStackProjects from "../data/projects";
 // import wordPressProjects from "../data/projects";
@@ -60,6 +61,7 @@ function App() {
           email={email}
         />
       </div>
+      <Category title="Front End"></Category>
       <section class="front-end-projects">
         {frontEndJsx}
       </section>
