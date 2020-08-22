@@ -4,7 +4,7 @@ import "./Header.scss";
 function Header(props) {
   return <header className="header-container">
     <div className="left-side-header">
-      <h3>John Saputo</h3>
+      <h3>{props.title}</h3>
     </div>
     <div className="right-side-header">
       <span><a href={props.githubLink} target="new"><i class="fab fa-github"></i></a></span>

@@ -55,6 +55,7 @@ function App() {
     <div className="App">
       <div className="App-header">
         <Header
+          title="John Saputo"
           githubLink={githubLink}
           email={email}
         />
