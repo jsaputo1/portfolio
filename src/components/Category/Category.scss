@@ -1,34 +1,23 @@
 @import "../../styles/shared.scss";
 
-.header-container {
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-  background: rgb(29, 45, 92);
-  background: linear-gradient(90deg, rgba(29, 45, 92, 1) 35%, rgba(19, 74, 142, 1) 100%);
-  height: 75px;
-  color: white;
-  padding: 0px 45px;
-  box-shadow: 0 4px 2px -2px gray;
-}
-
-.left-side-header {
+.category-header {
+  display: flex;
+  align-items: flex-end;
+  width: 95%;
+  padding: 0px 25px;
   h3 {
+    color: #ffffff;
     font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 600;
   }
-}
+  hr {
+    color: #ffffff;
+    height: 0px;
+    width: 80%;
+  }
 
-.right-side-header {
-  span {
-    letter-spacing: 25px;
-  }
-  a {
-    color: white;
+  i {
+    color: #ffffff;
     font-size: 2rem;
-    &:hover {
-      color: silver;
-    }
   }
 }

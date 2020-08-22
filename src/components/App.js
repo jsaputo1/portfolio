@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from "react";
 import "./App.scss";
 import Header from "./Header/Header";
 import Card from "./Card/Card";
-import Category from "./Category/Category"
+import Category from "./Category/Category";
 import frontEndProjects from "../data/projects";
 // import fullStackProjects from "../data/projects";
 // import wordPressProjects from "../data/projects";
@@ -11,6 +11,11 @@ import retrieveData from "../helpers/retrieveData";
 
 function App() {
 
+  //Set category state
+  const [categoryOpen, setCategoryOpen] = useState(true);
+  const toggle = () => setCategoryOpen(prevState => !prevState);
+
+  //Variables for header
   const githubLink = "https://github.com/jsaputo1/";
   const email = "jsaputo1@gmail.com";
 
@@ -61,10 +66,13 @@ function App() {
           email={email}
         />
       </div>
-      <Category title="Front End"></Category>
-      <section class="front-end-projects">
-        {frontEndJsx}
-      </section>
+      <Category title="Front End" toggle={toggle} />
+      {categoryOpen === true ?
+        (<section class="front-end-projects">
+          {frontEndJsx}
+        </section>)
+        : (< section class="front-end-projects" />)
+      }
       <section class="back-end-projects">
         {/* {backEndJsx} */}
       </section>
