@@ -18,3 +18,12 @@ export const Default = () => <Category
 Default.story = {
   name: "Expanded",
 };
+
+export const Collapsed = () => <Category
+  title={categoryObject.title}
+
+/>;
+
+Collapsed.story = {
+  name: "Collapsed",
+};
