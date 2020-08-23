@@ -72,20 +72,20 @@ function App() {
           email={email}
         />
       </div>
-      <section className="front-end-projects">
-        {frontEndOpen === true ?
+      <section className="word-press-projects">
+        {wordPressOpen === true ?
           (
             <div>
-              <Category title="Front End" toggle={toggleFrontEnd} position={open} />
+              <Category title="Word Press" toggle={toggleWordPress} position={open} />
               <div class="project-container">
-                {frontEndJsx}
+                {wordPressJsx}
               </div>
             </div>
           ) :
           (
             <div>
-              <Category title="Front End" toggle={toggleFrontEnd} position={closed} />
-              < section class="front-end-projects" />
+              <Category title="Word Press" toggle={toggleWordPress} position={closed} />
+              < section class="word-press-projects" />
             </div>
           )
         }
@@ -108,24 +108,25 @@ function App() {
           )
         }
       </section>
-      <section className="word-press-projects">
-        {wordPressOpen === true ?
+      <section className="front-end-projects">
+        {frontEndOpen === true ?
           (
             <div>
-              <Category title="Word Press" toggle={toggleWordPress} position={open} />
+              <Category title="Front End" toggle={toggleFrontEnd} position={open} />
               <div class="project-container">
-                {wordPressJsx}
+                {frontEndJsx}
               </div>
             </div>
           ) :
           (
             <div>
-              <Category title="Word Press" toggle={toggleWordPress} position={closed} />
-              < section class="word-press-projects" />
+              <Category title="Front End" toggle={toggleFrontEnd} position={closed} />
+              < section class="front-end-projects" />
             </div>
           )
         }
       </section>
+
     </div>
   );
 
