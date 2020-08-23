@@ -5,10 +5,12 @@
 }
 
 .project-container {
-  width: 75%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 40px 0px;
+  padding: 0px 30px;
+}
+
+.card-container {
+  margin: 40px 0px;
 }
