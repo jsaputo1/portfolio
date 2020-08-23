@@ -3,8 +3,8 @@
 .category-header {
   display: flex;
   align-items: flex-end;
-  width: 95%;
-  padding: 0px 25px;
+  width: 100%;
+  // padding: 0px 25px;
   h3 {
     color: #ffffff;
     font-size: 2rem;
@@ -13,7 +13,7 @@
   hr {
     color: #ffffff;
     height: 0px;
-    width: 80%;
+    width: 40%;
   }
 
   i {
