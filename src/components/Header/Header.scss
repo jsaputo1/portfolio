@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   background: rgb(29, 45, 92);
-  background: linear-gradient(90deg, rgba(29, 45, 92, 1) 35%, rgba(19, 74, 142, 1) 100%);
+  background: $blueGradient;
   height: 75px;
   color: white;
   padding: 0px 45px;
