@@ -1,7 +1,34 @@
 @import "../../styles/shared.scss";
 
-
 .hero-container {
+  color: #ffffff;
   display: flex;
-  align-items: center;
+  // align-items: center;
+}
+
+.hero-text {
+  padding: 0px 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero-title {
+  h2 {
+    font-size: 2rem;
+  }
+  h4 {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  a {
+    color: #ffffff;
+    &:hover {
+      opacity: 0.5;
+    }
+    &:visited {
+      color: #ffffff;
+    }
+  }
 }
