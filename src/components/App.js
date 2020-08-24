@@ -24,6 +24,7 @@ function App() {
   //Variables for header
   const githubLink = "https://github.com/jsaputo1/";
   const email = "jsaputo1@gmail.com";
+  const linkedIn = "https://www.linkedin.com/in/john-saputo-09a53b7b/";
 
   //Category header positions
   const open = "fas fa-chevron-down";
@@ -80,6 +81,7 @@ function App() {
           title="John Saputo"
           githubLink={githubLink}
           email={email}
+          linkedIn={linkedIn}
         />
       </div>
       <div className="container">

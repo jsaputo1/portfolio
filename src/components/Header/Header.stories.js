@@ -5,6 +5,7 @@ const headerObject = {
   title: "John Saputo",
   githubLink: "https://github.com/jsaputo1/",
   email: "jsaputo1@gmail.com",
+  linkedIn:"https://www.linkedin.com/in/john-saputo-09a53b7b/"
 
 };
 

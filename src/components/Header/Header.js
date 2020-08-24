@@ -9,6 +9,7 @@ function Header(props) {
     <div className="right-side-header">
       <span><a href={props.githubLink} target="new"><i class="fab fa-github"></i></a></span>
       <span><a href={props.email} target="new"><i class="fas fa-envelope-square"></i></a></span>
+      <span><a href={props.linkedIn} target="new"><i class="fab fa-linkedin"></i></a></span>
     </div>
   </header>;
 }
