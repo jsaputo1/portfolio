@@ -27,8 +27,8 @@ function App() {
   const linkedIn = "https://www.linkedin.com/in/john-saputo-09a53b7b/";
 
   //Category header positions
-  const open = "fas fa-chevron-down";
-  const closed = "fas fa-chevron-right";
+  const open = "fas fa-chevron-up";
+  const closed = "fas fa-chevron-down";
 
 
   const frontEndJsx =
@@ -89,7 +89,7 @@ function App() {
           {heroJsx}
         </section>
         <section className="word-press-projects">
-          {wordPressOpen === true ?
+          {!wordPressOpen ?
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={open} />
@@ -101,13 +101,13 @@ function App() {
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={closed} />
-                <section class="word-press-projects slide-up" />
+                <section class="word-press-projects slide-up empty-project" />
               </div>
             )
           }
         </section>
         <section className="full-stack-projects">
-          {fullStackOpen === true ?
+          {!fullStackOpen ?
             (
               <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={open} />
@@ -119,17 +119,17 @@ function App() {
             (
               <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={closed} />
-                <section class="full-stack-projects slide-up" />
+                <section class="full-stack-projects empty-project slide-up" />
               </div>
             )
           }
         </section>
         <section className="front-end-projects">
-          {frontEndOpen === true ?
+          {!frontEndOpen ?
             (
               <div>
                 <Category title="Front End" toggle={toggleFrontEnd} position={open} />
-                <div class="project-container slide-up">
+                <div class="project-container empty-project slide-up">
                   {frontEndJsx}
                 </div>
               </div>
@@ -137,7 +137,7 @@ function App() {
             (
               <div>
                 <Category title="Front End" toggle={toggleFrontEnd} position={closed} />
-                < section class="front-end-projects slide-up" />
+                < section class="front-end-projects empty-project slide-up" />
               </div>
             )
           }
