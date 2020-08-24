@@ -9,7 +9,6 @@ const { frontEndProjects } = require("../data/projects");
 const { fullStackProjects } = require("../data/projects");
 const { wordPressProjects } = require("../data/projects");
 
-
 function App() {
 
   //Set state for portfolio categories
@@ -83,64 +82,65 @@ function App() {
           email={email}
         />
       </div>
-      <section className="hero">
-        {heroJsx}
-      </section>
-      <section className="word-press-projects">
-        {wordPressOpen === true ?
-          (
-            <div>
-              <Category title="Word Press" toggle={toggleWordPress} position={open} />
-              <div class="project-container">
-                {wordPressJsx}
+      <div className="container">
+        <section className="hero">
+          {heroJsx}
+        </section>
+        <section className="word-press-projects">
+          {wordPressOpen === true ?
+            (
+              <div>
+                <Category title="Word Press" toggle={toggleWordPress} position={open} />
+                <div class="project-container">
+                  {wordPressJsx}
+                </div>
               </div>
-            </div>
-          ) :
-          (
-            <div>
-              <Category title="Word Press" toggle={toggleWordPress} position={closed} />
-              < section class="word-press-projects" />
-            </div>
-          )
-        }
-      </section>
-      <section className="full-stack-projects">
-        {fullStackOpen === true ?
-          (
-            <div>
-              <Category title="Full Stack" toggle={toggleFullStack} position={open} />
-              <div class="project-container">
-                {fullStackJsx}
+            ) :
+            (
+              <div>
+                <Category title="Word Press" toggle={toggleWordPress} position={closed} />
+                < section class="word-press-projects" />
               </div>
-            </div>
-          ) :
-          (
-            <div>
-              <Category title="Full Stack" toggle={toggleFullStack} position={closed} />
-              < section class="full-stack-projects" />
-            </div>
-          )
-        }
-      </section>
-      <section className="front-end-projects">
-        {frontEndOpen === true ?
-          (
-            <div>
-              <Category title="Front End" toggle={toggleFrontEnd} position={open} />
-              <div class="project-container">
-                {frontEndJsx}
+            )
+          }
+        </section>
+        <section className="full-stack-projects">
+          {fullStackOpen === true ?
+            (
+              <div>
+                <Category title="Full Stack" toggle={toggleFullStack} position={open} />
+                <div class="project-container">
+                  {fullStackJsx}
+                </div>
               </div>
-            </div>
-          ) :
-          (
-            <div>
-              <Category title="Front End" toggle={toggleFrontEnd} position={closed} />
-              < section class="front-end-projects" />
-            </div>
-          )
-        }
-      </section>
-
+            ) :
+            (
+              <div>
+                <Category title="Full Stack" toggle={toggleFullStack} position={closed} />
+                < section class="full-stack-projects" />
+              </div>
+            )
+          }
+        </section>
+        <section className="front-end-projects">
+          {frontEndOpen === true ?
+            (
+              <div>
+                <Category title="Front End" toggle={toggleFrontEnd} position={open} />
+                <div class="project-container">
+                  {frontEndJsx}
+                </div>
+              </div>
+            ) :
+            (
+              <div>
+                <Category title="Front End" toggle={toggleFrontEnd} position={closed} />
+                < section class="front-end-projects" />
+              </div>
+            )
+          }
+        </section>
+      </div>
     </div>
   );
 
