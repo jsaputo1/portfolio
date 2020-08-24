@@ -3,25 +3,23 @@
 .hero-container {
   color: #ffffff;
   display: flex;
-  // align-items: center;
+  img {
+    height: 475px;
+  }
 }
 
 .hero-text {
   padding: 0px 75px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .hero-title {
   h2 {
     font-size: 2rem;
   }
-  h4 {
-    padding-top: 10px;
-    font-size: 0.9rem;
-    font-style: italic;
-  }
+
   a {
     color: #ffffff;
     &:hover {
@@ -31,4 +29,25 @@
       color: #ffffff;
     }
   }
+}
+
+.hero-tag {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 6px;
+  h4 {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  i {
+    letter-spacing: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+.hero-article {
+  margin-top: 20px;
 }
