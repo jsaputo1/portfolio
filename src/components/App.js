@@ -88,56 +88,56 @@ function App() {
         <section className="hero">
           {heroJsx}
         </section>
-        <section className="word-press-projects">
+        <section className="word-press-projects" id="word-press">
           {!wordPressOpen ?
             (
               <div>
-                <Category title="Word Press" toggle={toggleWordPress} position={open} />
-                <div class="project-container slide-up">
+                <Category title="Word Press" toggle={toggleWordPress} position={open} idLink={"#word-press"} />
+                <div class="project-container fade-in" >
                   {wordPressJsx}
                 </div>
               </div>
             ) :
             (
               <div>
-                <Category title="Word Press" toggle={toggleWordPress} position={closed} />
-                <section class="word-press-projects slide-up empty-project" />
+                <Category title="Word Press" toggle={toggleWordPress} position={closed} idLink={"#word-press"} />
+                <section class="word-press-projects empty-project" />
               </div>
             )
           }
         </section>
-        <section className="full-stack-projects">
+        <section className="full-stack-projects" id="full-stack">
           {!fullStackOpen ?
             (
               <div>
-                <Category title="Full Stack" toggle={toggleFullStack} position={open} />
-                <div class="project-container slide-up">
+                <Category title="Full Stack" toggle={toggleFullStack} position={open} idLink={"#full-stack"} />
+                <div class="project-container fade-in">
                   {fullStackJsx}
                 </div>
               </div>
             ) :
             (
               <div>
-                <Category title="Full Stack" toggle={toggleFullStack} position={closed} />
-                <section class="full-stack-projects empty-project slide-up" />
+                <Category title="Full Stack" toggle={toggleFullStack} position={closed} idLink={"#full-stack"} />
+                <section class="full-stack-projects empty-project fade-in"  />
               </div>
             )
           }
         </section>
-        <section className="front-end-projects">
+        <section className="front-end-projects" id="front-end">
           {!frontEndOpen ?
             (
               <div>
-                <Category title="Front End" toggle={toggleFrontEnd} position={open} />
-                <div class="project-container empty-project slide-up">
+                <Category title="Front End" toggle={toggleFrontEnd} position={open} idLink={"#front-end"} />
+                <div class="project-container empty-project fade-in">
                   {frontEndJsx}
                 </div>
               </div>
             ) :
             (
               <div>
-                <Category title="Front End" toggle={toggleFrontEnd} position={closed} />
-                < section class="front-end-projects empty-project slide-up" />
+                <Category title="Front End" toggle={toggleFrontEnd} position={closed} idLink={"#front-end"} />
+                < section class="front-end-projects empty-project fade-in" />
               </div>
             )
           }
