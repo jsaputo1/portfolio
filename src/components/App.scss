@@ -5,12 +5,17 @@
   margin: 0 auto;
 }
 
+.header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .App-header {
   margin-bottom: 20px;
 }
 
 .hero {
-  margin-top: 25px;
   margin-bottom: 50px;
 }
 
