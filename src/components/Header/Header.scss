@@ -4,17 +4,16 @@
   display: flex !important;
   justify-content: space-between;
   align-items: center;
-  background: rgb(29, 45, 92);
-  background: $blueGradient;
-  height: 75px;
+  background: $gunMetalBlue;
+  height: 70px;
   color: white;
-  padding: 0px 45px;
-  box-shadow: 0 4px 2px -2px gray;
+  padding: 0px 100px;
+  box-shadow: 0 4px 2px -2px $gold;
 }
 
 .left-side-header {
   h3 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 700;
     letter-spacing: 2px;
   }
@@ -25,10 +24,10 @@
     letter-spacing: 25px;
   }
   a {
-    color: white;
+    color: #ffffff;
     font-size: 2rem;
     &:hover {
-      color: silver;
+      color: $gold;
     }
   }
 }
