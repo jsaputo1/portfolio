@@ -4,10 +4,15 @@ import "./Hero.scss";
 function Hero(props) {
   return <div className="hero-container">
     <div className="hero-text">
-      <h2>John Saputo</h2>
-      <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet ante ante. Nulla facilisi. Proin vitae libero sapien. Mauris at pretium ipsum, at eleifend velit. Donec lorem dui, tempus ac dignissim eget, porta et justo. Praesent eget laoreet elit, nec congue ante.. </h3>
+      <div className="hero-title">
+        <h2>{props.title}</h2>
+        <h4>{props.tag}</h4>
+        <span><a href={props.githubLink} target="new"><i class="fab fa-github"></i></a></span>
+        <span><a href={props.email} target="new"><i class="fas fa-envelope-square"></i></a></span>
+      </div>
+      <h3>{props.article} </h3>
     </div>
-    <img src="/images/hero-banner3.png" alt="hero-banner" />
+    <img src={props.image} alt="hero-banner" />
 
   </div>;
 }
