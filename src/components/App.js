@@ -82,7 +82,7 @@ function App() {
           email={email}
         />
       </div>
-      <div className="container"> 
+      <div className="container">
         <section className="hero">
           {heroJsx}
         </section>
@@ -99,17 +99,17 @@ function App() {
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={closed} />
-                < section class="word-press-projects slide-up" />
+                <section class="word-press-projects slide-up" />
               </div>
             )
           }
         </section>
-        <section className="full-stack-projects">
+        <section className="full-stack-projects slide-up">
           {fullStackOpen === true ?
             (
               <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={open} />
-                <div class="project-container">
+                <div class="project-container slide-up">
                   {fullStackJsx}
                 </div>
               </div>
@@ -117,17 +117,17 @@ function App() {
             (
               <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={closed} />
-                < section class="full-stack-projects" />
+                <section class="full-stack-projects slide-up" />
               </div>
             )
           }
         </section>
-        <section className="front-end-projects">
+        <section className="front-end-projects slide-up">
           {frontEndOpen === true ?
             (
               <div>
                 <Category title="Front End" toggle={toggleFrontEnd} position={open} />
-                <div class="project-container">
+                <div class="project-container slide-up">
                   {frontEndJsx}
                 </div>
               </div>
@@ -135,7 +135,7 @@ function App() {
             (
               <div>
                 <Category title="Front End" toggle={toggleFrontEnd} position={closed} />
-                < section class="front-end-projects" />
+                < section class="front-end-projects slide-up" />
               </div>
             )
           }
