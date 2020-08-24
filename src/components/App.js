@@ -86,7 +86,7 @@ function App() {
         <section className="hero">
           {heroJsx}
         </section>
-        <section className="word-press-projects slide-up">
+        <section className="word-press-projects">
           {wordPressOpen === true ?
             (
               <div>
@@ -104,7 +104,7 @@ function App() {
             )
           }
         </section>
-        <section className="full-stack-projects slide-up">
+        <section className="full-stack-projects">
           {fullStackOpen === true ?
             (
               <div>
@@ -122,7 +122,7 @@ function App() {
             )
           }
         </section>
-        <section className="front-end-projects slide-up">
+        <section className="front-end-projects">
           {frontEndOpen === true ?
             (
               <div>
