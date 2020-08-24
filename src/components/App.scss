@@ -1,7 +1,17 @@
 @import "../styles/shared.scss";
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .App-header {
   margin-bottom: 20px;
+}
+
+.hero {
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .project-container {
