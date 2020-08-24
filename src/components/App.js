@@ -92,13 +92,13 @@ function App() {
           {!wordPressOpen ?
             (
               <div className="slide-up">
-                <Category title="Word Press" toggle={toggleWordPress} position={closed} />
+                <Category title="Word Press" toggle={toggleWordPress} position={closed} idLink={"#word-press"} />
                 <div className="word-press-projects empty-project" />
               </div>
             ) :
             (
               <div>
-                <Category title="Word Press" toggle={toggleWordPress} position={open} />
+                <Category title="Word Press" toggle={toggleWordPress} position={open} idLink={"#word-press"} />
                 <div className="project-container fade-in" >
                   {wordPressJsx}
                 </div>
@@ -116,7 +116,7 @@ function App() {
             ) :
             (
               <div>
-                <Category title="Full Stack" toggle={toggleFullStack} position={open} />
+                <Category title="Full Stack" toggle={toggleFullStack} position={open} idLink={"#full-stack"} />
                 <div className="project-container fade-in">
                   {fullStackJsx}
                 </div>
@@ -128,13 +128,13 @@ function App() {
           {!frontEndOpen ?
             (
               <div className="slide-up">
-                <Category title="Front End" toggle={toggleFrontEnd} position={closed} />
+                <Category title="Front End" toggle={toggleFrontEnd} position={closed} idLink={"#front-end"} />
                 <div class="front-end-projects empty-project" />
               </div>
             ) :
             (
               <div>
-                <Category title="Front End" toggle={toggleFrontEnd} position={open} />
+                <Category title="Front End" toggle={toggleFrontEnd} position={open} idLink={"#front-end"} />
                 <div className="project-container empty-project fade-in">
                   {frontEndJsx}
                 </div>
