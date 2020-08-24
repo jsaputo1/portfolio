@@ -93,7 +93,7 @@ function App() {
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={open} idLink={"#word-press"} />
-                <div class="project-container fade-in" >
+                <div class="project-container fade-in slide-up" >
                   {wordPressJsx}
                 </div>
               </div>
@@ -101,7 +101,7 @@ function App() {
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={closed} idLink={"#word-press"} />
-                <section class="word-press-projects empty-project" />
+                <div class="word-press-projects empty-project fade-in" />
               </div>
             )
           }
@@ -111,7 +111,7 @@ function App() {
             (
               <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={open} idLink={"#full-stack"} />
-                <div class="project-container fade-in">
+                <div class="project-container fade-in slide-up">
                   {fullStackJsx}
                 </div>
               </div>
@@ -119,7 +119,7 @@ function App() {
             (
               <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={closed} idLink={"#full-stack"} />
-                <section class="full-stack-projects empty-project fade-in"  />
+                <div class="full-stack-projects empty-project fade-in"  />
               </div>
             )
           }
@@ -137,7 +137,7 @@ function App() {
             (
               <div>
                 <Category title="Front End" toggle={toggleFrontEnd} position={closed} idLink={"#front-end"} />
-                < section class="front-end-projects empty-project fade-in" />
+                <div class="front-end-projects empty-project fade-in" />
               </div>
             )
           }
