@@ -82,16 +82,16 @@ function App() {
           email={email}
         />
       </div>
-      <div className="container">
+      <div className="container"> 
         <section className="hero">
           {heroJsx}
         </section>
-        <section className="word-press-projects">
+        <section className="word-press-projects slide-up">
           {wordPressOpen === true ?
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={open} />
-                <div class="project-container">
+                <div class="project-container slide-up">
                   {wordPressJsx}
                 </div>
               </div>
@@ -99,7 +99,7 @@ function App() {
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={closed} />
-                < section class="word-press-projects" />
+                < section class="word-press-projects slide-up" />
               </div>
             )
           }
