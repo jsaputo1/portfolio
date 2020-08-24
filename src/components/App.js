@@ -3,6 +3,7 @@ import "./App.scss";
 import Header from "./Header/Header";
 import Card from "./Card/Card";
 import Category from "./Category/Category";
+import Hero from "./Hero/Hero";
 // import { frontEndProjects, fullStackProjects, wordPressProjects}  from "../data/projects";
 const { frontEndProjects } = require("../data/projects");
 const { fullStackProjects } = require("../data/projects");
@@ -63,6 +64,16 @@ function App() {
       />;
     });
 
+  const heroJsx =
+    <Hero
+      title={"John Saputo"}
+      tag={"Web Developer"}
+      gitHubLink={githubLink}
+      email={email}
+      article={" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet ante ante. Nulla facilisi. Proinvitae libero sapien. Mauris at pretium ipsum, at eleifend velit. Donec lorem dui, tempus ac dignissim eget, porta et justo. Praesent eget laoreet elit, nec congue ante.."}
+      image={"/images/hero-banner3.png"}
+    />;
+
   return (
     <div className="App">
       <div className="App-header">
@@ -72,6 +83,9 @@ function App() {
           email={email}
         />
       </div>
+      <section className="hero">
+        {heroJsx}
+      </section>
       <section className="word-press-projects">
         {wordPressOpen === true ?
           (
