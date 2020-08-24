@@ -19,16 +19,6 @@
   h2 {
     font-size: 2rem;
   }
-
-  a {
-    color: #ffffff;
-    &:hover {
-      opacity: 0.5;
-    }
-    &:visited {
-      color: #ffffff;
-    }
-  }
 }
 
 .hero-tag {
@@ -40,11 +30,17 @@
     padding-right: 10px;
     font-size: 0.9rem;
     font-style: italic;
+    color: $gold;
   }
-
   i {
     letter-spacing: 15px;
     font-size: 1.2rem;
+  }
+  a {
+    color: #ffffff;
+    &:hover {
+      color: $gold;
+    }
   }
 }
 
