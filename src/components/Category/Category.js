@@ -6,9 +6,7 @@ function Category(props) {
     <hr />
     <h3>{props.title}</h3>
     <hr />
-    <div className="anchor">
-      <a href={props.idLink}><i class={props.position} onClick={props.toggle}></i></a>
-    </div>
+    <a href={props.idLink}><i class={props.position} onClick={props.toggle}></i></a>
   </div>;
 }
 
