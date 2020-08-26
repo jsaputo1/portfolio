@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Header from "./Header/Header";
-import Card from "./Card/Card";
+// import Card from "./Card/Card";
 import Category from "./Category/Category";
 import Hero from "./Hero/Hero";
 import Slider from "react-slick";
 import "./App.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const { headerProps, wordPressJsx, fullStackJsx, frontEndJsx, heroProps, sliderSettings, projectData } = require("./AppData/PropData");
+const { headerProps, wordPressJsx, fullStackJsx, frontEndJsx, heroProps, sliderSettings } = require("./AppData/PropData");
 const { open, closed } = require("./AppData/Variables");
 
 function App() {
