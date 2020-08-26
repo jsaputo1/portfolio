@@ -33,6 +33,12 @@ function App() {
   const open = "fas fa-chevron-up";
   const closed = "fas fa-chevron-down";
 
+  //Slider settings
+  const sliderSettings = {
+    slidesToShow: 3,
+    dots: true
+  };
+
   const wordPressJsx =
     Object.keys(wordPressProjects).map(function (key) {
       return <Card
@@ -101,7 +107,7 @@ function App() {
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={open} idLink={"#word-press"} />
-                <Slider slidesToShow={3} dots={true}>
+                <Slider {...sliderSettings}>
                   {wordPressJsx}
                 </Slider>
               </div>
@@ -119,7 +125,7 @@ function App() {
             (
               <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={open} idLink={"#full-stack"} />
-                <Slider slidesToShow={3} dots={true}>
+                <Slider {...sliderSettings}>
                   {fullStackJsx}
                 </Slider>
               </div>
@@ -137,7 +143,7 @@ function App() {
             (
               <div>
                 <Category title="Front End" toggle={toggleFrontEnd} position={open} idLink={"#front-end"} />
-                <Slider slidesToShow={3} dots={true}>
+                <Slider {...sliderSettings}>
                   {frontEndJsx}
                 </Slider>
               </div>
