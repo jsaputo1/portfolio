@@ -45,3 +45,27 @@
 #front-end {
   scroll-margin-top: 100px;
 }
+
+//Tablet View Settings
+
+@include tablet {
+  .hero-container {
+    img {
+      display: none;
+    }
+    .hero-text {
+      align-items: center;
+
+      h3 {
+        padding-right: 30px;
+      }
+    }
+
+    .category-header {
+      hr {
+        width: 30%;
+      }
+    }
+  }
+}
+
