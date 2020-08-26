@@ -85,7 +85,9 @@ const wordPressProjects = {
     demoLink: "https://www.johnsaputo.net/qod",
     githubLink: "https://github.com/jsaputo1/quotesondev",
     thumbnail: "http://localhost:6006/images/thumbnails/qod.png",
-    description: "Quotes on Dev is a multi page web app that shows random developer themed quotes, and also allows registered users to submit their own quotes. The app uses Word Press as the content management system, and is fully responsive with breakpoints for Tablet and Mobile."
+    description: "Quotes on Dev is a multi page web app that shows random developer themed quotes, and also allows registered users to submit their own quotes. The app uses Word Press as the content management system, and is fully responsive with breakpoints for Tablet and Mobile.",
+    technologies: "PHP, SASS, jQuery, HTML, Gulp",
+    notes: "New quotes can only be submitted by registered users. Registration has not been implemented yet, you are able to view the submit page but cannot register an account yet.",
   },
 
   s3: {
