@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 function Header(props) {
+
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const toggle = () => setDropdownOpen(prevState => !prevState);
+
   return <header className="header-container">
     <div className="left-side-header">
       <h3>{props.title}</h3>
     </div>
     <div className="left-side-header-mobile">
-      <i class="fas fa-bars"></i>
+      <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+        <DropdownToggle>
+          <i class="fas fa-bars"></i>
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem><a href="#word-press">Word Press</a></DropdownItem>
+          <DropdownItem><a href="#full-stack">Full Stack</a></DropdownItem>
+          <DropdownItem><a href="#front-end">Front End</a></DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
     </div>
     <div className="right-side-header">
       <span><a href={props.githubLink} target="new"><i class="fab fa-github"></i></a></span>
