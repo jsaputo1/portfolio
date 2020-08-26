@@ -64,9 +64,10 @@ export const sliderSettings = {
   dots: true,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1050,
       settings: {
         slidesToShow: 2,
+        dots: true,
       }
     }
   ]
