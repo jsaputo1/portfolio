@@ -15,17 +15,20 @@ function App() {
   //Set state for portfolio categories
   const [frontEndOpen, setFrontEndOpen] = useState(false);
   const toggleFrontEnd = () => setFrontEndOpen(prevState => !prevState);
+  const openFrontEnd = () => setFrontEndOpen(true);
 
-  const [fullStackOpen, setToggleFullStack] = useState(false);
-  const toggleFullStack = () => setToggleFullStack(prevState => !prevState);
+  const [fullStackOpen, setFullStackOpen] = useState(false);
+  const toggleFullStack = () => setFullStackOpen(prevState => !prevState);
+  const openFullStack = () => setFullStackOpen(true);
 
   const [wordPressOpen, setWordPressOpen] = useState(false);
   const toggleWordPress = () => setWordPressOpen(prevState => !prevState);
+  const openWordPress = () => setWordPressOpen(true);
 
   return (
     <div className="App">
       <div className="App-header">
-        <Header {...headerProps} />
+        <Header {...headerProps} openFrontEnd={openFrontEnd} openFullStack={openFullStack} openWordPress={openWordPress} />
       </div>
       <div className="container">
         <section className="hero">
