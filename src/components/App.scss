@@ -55,17 +55,46 @@
     }
     .hero-text {
       align-items: center;
-
+  
       h3 {
         padding-right: 30px;
       }
     }
-
-    .category-header {
-      hr {
-        width: 30%;
-      }
+  }
+  .category-header {
+    width: 90%;
+    margin: 0 auto;
+    hr {
+      width: 30%;
     }
   }
 }
 
+@include mobile {
+
+  .header.container {
+
+  }
+
+  .left-side-header {
+    display: none;
+  }
+  
+  .hero-text {
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+
+  .hero-article {
+    padding-right: 0px;
+  }
+
+  .category-header {
+    h3 {
+      font-size: 1.3rem;
+    }
+    hr {
+      width: 20%;
+    }
+  }
+}
