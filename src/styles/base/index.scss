@@ -1,3 +1,15 @@
+@mixin tablet {
+  @media (max-width: 1050px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
