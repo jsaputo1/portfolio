@@ -10,8 +10,7 @@ export const headerProps = {
   linkedIn: linkedIn,
 };
 
-
-export const fullStacProps =
+export const fullStackJsx =
   Object.keys(fullStackProjects).map(function (key) {
     return <Card
       title={fullStackProjects[key].title}
@@ -24,7 +23,7 @@ export const fullStacProps =
     />;
   });
 
-export const wordPressProps =
+export const wordPressJsx =
   Object.keys(wordPressProjects).map(function (key) {
     return <Card
       title={wordPressProjects[key].title}
@@ -37,7 +36,7 @@ export const wordPressProps =
     />;
   });
 
-export const frontEndProps =
+export const frontEndJsx =
   Object.keys(frontEndProjects).map(function (key) {
     return <Card
       title={frontEndProjects[key].title}
