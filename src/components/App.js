@@ -47,6 +47,8 @@ function App() {
         githubLink={wordPressProjects[key].githubLink}
         thumbnail={wordPressProjects[key].thumbnail}
         description={wordPressProjects[key].description}
+        technologies={wordPressProjects[key].technologies}
+        notes={wordPressProjects[key].notes}
       />;
     });
 
@@ -58,6 +60,8 @@ function App() {
         githubLink={frontEndProjects[key].githubLink}
         thumbnail={frontEndProjects[key].thumbnail}
         description={frontEndProjects[key].description}
+        technologies={frontEndProjects[key].technologies}
+        notes={frontEndProjects[key].notes}
       />;
     });
 
@@ -69,6 +73,8 @@ function App() {
         githubLink={fullStackProjects[key].githubLink}
         thumbnail={fullStackProjects[key].thumbnail}
         description={fullStackProjects[key].description}
+        technologies={fullStackProjects[key].technologies}
+        notes={fullStackProjects[key].notes}
       />;
     });
 
