@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import "./App.scss";
 import Header from "./Header/Header";
 import Card from "./Card/Card";
 import Category from "./Category/Category";
 import Hero from "./Hero/Hero";
+import Slider from "react-slick";
+import "./App.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // import { frontEndProjects, fullStackProjects, wordPressProjects}  from "../data/projects";
 const { frontEndProjects } = require("../data/projects");
 const { fullStackProjects } = require("../data/projects");
@@ -30,6 +33,16 @@ function App() {
   const open = "fas fa-chevron-up";
   const closed = "fas fa-chevron-down";
 
+  const wordPressJsx =
+    Object.keys(wordPressProjects).map(function (key) {
+      return <Card
+        title={wordPressProjects[key].title}
+        demoLink={wordPressProjects[key].demoLink}
+        githubLink={wordPressProjects[key].githubLink}
+        thumbnail={wordPressProjects[key].thumbnail}
+        description={wordPressProjects[key].description}
+      />;
+    });
 
   const frontEndJsx =
     Object.keys(frontEndProjects).map(function (key) {
@@ -50,17 +63,6 @@ function App() {
         githubLink={fullStackProjects[key].githubLink}
         thumbnail={fullStackProjects[key].thumbnail}
         description={fullStackProjects[key].description}
-      />;
-    });
-
-  const wordPressJsx =
-    Object.keys(wordPressProjects).map(function (key) {
-      return <Card
-        title={wordPressProjects[key].title}
-        demoLink={wordPressProjects[key].demoLink}
-        githubLink={wordPressProjects[key].githubLink}
-        thumbnail={wordPressProjects[key].thumbnail}
-        description={wordPressProjects[key].description}
       />;
     });
 
@@ -99,9 +101,9 @@ function App() {
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={open} idLink={"#word-press"} />
-                <div className="project-container fade-in" >
+                <Slider slidesToShow={3} dots={true}>
                   {wordPressJsx}
-                </div>
+                </Slider>
               </div>
             )
           }
@@ -117,9 +119,9 @@ function App() {
             (
               <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={open} idLink={"#full-stack"} />
-                <div className="project-container fade-in">
+                <Slider slidesToShow={3} dots={true}>
                   {fullStackJsx}
-                </div>
+                </Slider>
               </div>
             )
           }
@@ -135,9 +137,9 @@ function App() {
             (
               <div>
                 <Category title="Front End" toggle={toggleFrontEnd} position={open} idLink={"#front-end"} />
-                <div className="project-container empty-project fade-in">
+                <Slider slidesToShow={3} dots={true}>
                   {frontEndJsx}
-                </div>
+                </Slider>
               </div>
             )
           }
