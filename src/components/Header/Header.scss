@@ -32,3 +32,17 @@
     }
   }
 }
+
+.left-side-header-mobile {
+  display: none;
+}
+
+@include mobile {
+  .left-side-header {
+    display: none;
+  }
+
+  .left-side-header-mobile {
+    display: block;
+  }
+}

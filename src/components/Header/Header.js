@@ -6,6 +6,9 @@ function Header(props) {
     <div className="left-side-header">
       <h3>{props.title}</h3>
     </div>
+    <div className="left-side-header-mobile">
+      <i class="fas fa-bars"></i>
+    </div>
     <div className="right-side-header">
       <span><a href={props.githubLink} target="new"><i class="fab fa-github"></i></a></span>
       <span><a href={props.email} target="new"><i class="fas fa-envelope-square"></i></a></span>
