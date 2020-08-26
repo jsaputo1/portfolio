@@ -61,5 +61,13 @@ export const heroProps = {
 
 export const sliderSettings = {
   slidesToShow: 3,
-  dots: true
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
 };
