@@ -16,3 +16,13 @@
 .slick-dots li button::before {
   color: $gold !important;
 }
+
+@include tablet {
+  .slick-prev {
+    padding-left: 3% !important;
+  }
+
+  .slick-next {
+    padding-right: 5% !important;
+  }
+}
