@@ -45,6 +45,9 @@ function App() {
             (
               <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={open} idLink={"#word-press"} />
+                <div className="project-container-mobile">
+                  {wordPressJsx}
+                </div>
                 <Slider {...sliderSettings}>
                   {wordPressJsx}
                 </Slider>
@@ -63,6 +66,9 @@ function App() {
             (
               <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={open} idLink={"#full-stack"} />
+                <div className="project-container-mobile">
+                  {fullStackJsx}
+                </div>
                 <Slider {...sliderSettings}>
                   {fullStackJsx}
                 </Slider>
@@ -81,6 +87,9 @@ function App() {
             (
               <div>
                 <Category title="Front End" toggle={toggleFrontEnd} position={open} idLink={"#front-end"} />
+                <div className="project-container-mobile">
+                  {frontEndJsx}
+                </div>
                 <Slider {...sliderSettings}>
                   {frontEndJsx}
                 </Slider>
