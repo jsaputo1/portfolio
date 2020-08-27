@@ -55,7 +55,7 @@ export const heroProps = {
   gitHubLink: githubLink,
   email: email,
   article: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet ante ante. Nulla facilisi. Proinvitae libero sapien. Mauris at pretium ipsum, at eleifend velit. Donec lorem dui, tempus ac dignissim eget, porta et justo. Praesent eget laoreet elit, nec congue ante..",
-  image: "/images/hero-banner3.png",
+  image: "/portfolio/images/hero-banner3.png",
 };
 
 
