@@ -64,11 +64,20 @@
 }
 
 @include mobile {
-  .header.container {
-  }
-
   .left-side-header {
     display: none;
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 1.5rem;
+    a {
+      color: $charcoalBlue;
+    }
+  }
+  .right-side-header {
+    i {
+      font-size: 1.7rem;
+    }
   }
 
   .hero-text {
@@ -78,6 +87,13 @@
 
   .hero-article {
     padding-right: 0px;
+  }
+
+  .hero-tag {
+    justify-content: center;
+    i {
+      display: none;
+    }
   }
 
   .category-header {
