@@ -8,6 +8,7 @@ export const headerProps = {
   githubLink: githubLink,
   email: email,
   linkedIn: linkedIn,
+  headerLink: "#top",
 };
 
 export const fullStackJsx =

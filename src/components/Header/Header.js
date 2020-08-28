@@ -9,7 +9,7 @@ function Header(props) {
 
   return <header className="header-container">
     <div className="left-side-header">
-      <a href="/index"><h3>{props.title}</h3></a>
+      <a href={props.headerLink}><h3>{props.title}</h3></a>
     </div>
     <div className="left-side-header-mobile">
       <Dropdown isOpen={dropdownOpen} toggle={toggle}>
