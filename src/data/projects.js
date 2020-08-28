@@ -61,6 +61,7 @@ const fullStackProjects = {
     description: "CupOSugah is a social media website that allows users to see and post events in their neighbourhood. After the user registers their account, the app uses Google Maps geocoding API to determine their location. The user is then able to join either of the two neighbourhoods closest to them.",
     technologies: "React, SASS, PostgreSQL, Node, Express, Google Maps API, Twilio API",
     notes: "The app has not been deployed yet, the link will take you to a video walkthrough on YouTube.",
+    video: "https://www.youtube.com/watch?v=ANXvLV38fXI"
   },
 
   s3: {
