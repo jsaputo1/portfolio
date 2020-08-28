@@ -108,7 +108,7 @@ const wordPressProjects = {
 
   s3: {
     title: "The League",
-    demoLink: "https://www.johnsaputo.net/the-league",
+    demoLink: "https://www.johnsaputo.net/league/",
     githubLink: "https://github.com/jsaputo1/fifa-league",
     thumbnail: "/images/thumbnails/the-league.png",
     description: "Designed to mimic TheScore.ca this was a fun project to help pass time during the COVID-19 lockdown. This site was created to track scores and standings for a Playstation FIFA 20 league. Word Press is used as a content management system",
