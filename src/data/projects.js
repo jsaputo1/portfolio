@@ -26,7 +26,7 @@ const frontEndProjects = {
   s3: {
     title: "Fifa Teams",
     demoLink: "https://www.johnsaputo.net/fifa",
-    githubLink: "#",
+    githubLink: null,
     thumbnail: "/images/thumbnails/fifa.png",
     description: "Built in Spring 2020, this was a fun project to help pass time during the COVID-19 lockdown. This single page site was made to track the custom teams created in a Playstation FIFA 20 league.",
     technologies: "jQuery, SASS,  HTML, gulp",
@@ -79,7 +79,7 @@ const fullStackProjects = {
 
   s4: {
     title: "Tiny App",
-    demoLink: "#",
+    demoLink: null,
     githubLink: "https://github.com/jsaputo1/tinyapp",
     thumbnail: "/images/thumbnails/tinyApp.png",
     description: "TinyApp is a full stack web application that allows users to shorten long URLs, similar to bit.ly. Users are able to register an account which will allow them to view and manage previous entries. Testing was done with mocha and chai.",
