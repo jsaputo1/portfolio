@@ -21,6 +21,7 @@ export const fullStackJsx =
       description={fullStackProjects[key].description}
       technologies={fullStackProjects[key].technologies}
       notes={fullStackProjects[key].notes}
+      video={fullStackProjects[key].video}
     />;
   });
 
