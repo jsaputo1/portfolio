@@ -10,7 +10,7 @@ const frontEndProjects = {
     thumbnail: "/images/thumbnails/aloha.png",
     description: "Aloha is a single page design of an online clothing store. It was designed mobile first with responsive views for Tablet and Desktop.",
     technologies: "CSS, HTML, JavaScript",
-    notes: "",
+    notes: null,
   },
 
   s2: {
@@ -20,7 +20,7 @@ const frontEndProjects = {
     thumbnail: "/images/thumbnails/instanews.png",
     description: "Instanews is a single page web app that allows users to filter top news stories pulled from the New York Times API. Designed mobile first, it is fully responsive with views for mobile, tablet and desktop.",
     technologies: "jQuery, SASS, HTML, gulp",
-    notes: "",
+    notes: null,
   },
 
   s3: {
@@ -30,7 +30,7 @@ const frontEndProjects = {
     thumbnail: "/images/thumbnails/fifa.png",
     description: "Built in Spring 2020, this was a fun project to help pass time during the COVID-19 lockdown. This single page site was made to track the custom teams created in a Playstation FIFA 20 league.",
     technologies: "jQuery, SASS,  HTML, gulp",
-    notes: "",
+    notes: null,
   },
 
   s4: {
@@ -40,7 +40,7 @@ const frontEndProjects = {
     thumbnail: "/images/thumbnails/portfolio.png",
     description: "A website to showcase my projects. My portfolio was designed with React with all components custom developed using Storybook. It is responsive with views for Desktop, Tablet and Mobile.",
     technologies: "React, JavaScript, SASS, Storybook",
-    notes: "",
+    notes: null,
   }
 
 };
@@ -74,7 +74,7 @@ const fullStackProjects = {
     thumbnail: "/images/thumbnails/tweeter.png",
     description: "Tweeter is a simple, single-page Twitter clone where users can post new tweets. The site is responsive with a mobile view. The app was deployed on Heroku.",
     technologies: "jQuery, CSS, HTML, JavaScript, Node, Express",
-    notes: "",
+    notes: null,
   },
 
   s4: {
@@ -98,7 +98,7 @@ const wordPressProjects = {
     thumbnail: "/images/thumbnails/inhabitent.png",
     description: "Inabitent is a WordPress web store for outdoor/camping equipment. The theme was built from scratch and allows the site administrator to easily add/remove/edit content through WordPress without the need to code.",
     technologies: "WordPress, PHP, SASS, jQuery, gulp",
-    notes: "",
+    notes: null,
   },
 
   s2: {
