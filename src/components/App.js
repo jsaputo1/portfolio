@@ -37,9 +37,9 @@ function App() {
         <section className="word-press-projects" id="word-press">
           {!wordPressOpen ?
             (
-              <div className="slide-up">
+              <div>
                 <Category title="Word Press" toggle={toggleWordPress} position={closed} idLink={"#word-press"} />
-                <div className="word-press-projects empty-project" />
+                <div className="word-press-projects empty-project slide-up" />
               </div>
             ) :
             (
@@ -58,9 +58,9 @@ function App() {
         <section className="full-stack-projects" id="full-stack">
           {!fullStackOpen ?
             (
-              <div className="slide-up">
+              <div>
                 <Category title="Full Stack" toggle={toggleFullStack} position={closed} />
-                <div class="full-stack-projects empty-project" />
+                <div class="full-stack-projects empty-project slide-up" />
               </div>
             ) :
             (
@@ -79,9 +79,9 @@ function App() {
         <section className="front-end-projects" id="front-end">
           {!frontEndOpen ?
             (
-              <div className="slide-up">
+              <div>
                 <Category title="Front End" toggle={toggleFrontEnd} position={closed} idLink={"#front-end"} />
-                <div class="front-end-projects empty-project" />
+                <div class="front-end-projects empty-project slide-up" />
               </div>
             ) :
             (
