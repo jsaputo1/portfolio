@@ -70,6 +70,13 @@ export const sliderSettings = {
         slidesToShow: 2,
         dots: true,
       }
+    },
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 1,
+        dots: true,
+      }
     }
   ]
 };
