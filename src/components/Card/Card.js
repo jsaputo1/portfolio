@@ -1,6 +1,6 @@
 import React from "react";
 import "./Card.scss";
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/youtube';
 
 function Card(props) {
   return <div className="card-container">
