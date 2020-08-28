@@ -28,8 +28,9 @@
 .card-figure {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  height: 600px;
   font-size: 1rem;
   color: $darkGrey;
   padding: 0px 10px;
