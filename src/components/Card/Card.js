@@ -22,8 +22,16 @@ function Card(props) {
         <span><h4>{props.description}</h4></span>
         <span><h3>Technologies:</h3></span>
         <span><h4>{props.technologies}</h4></span>
-        <span><h3>Notes:</h3></span>
-        <span><h4>{props.notes}</h4></span>
+        {props.notes != null ? (
+          <div>
+            <span><h3>Notes:</h3></span>
+            <span><h4>{props.notes}</h4></span>
+          </div>
+        ) : (
+            <div>
+            </div>
+          )
+        }
       </div>
     </figure>
   </div>;
