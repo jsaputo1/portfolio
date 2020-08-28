@@ -26,7 +26,7 @@ function App() {
   const openWordPress = () => setWordPressOpen(true);
 
   return (
-    <div className="App">
+    <div className="App" id="top">
       <div className="App-header">
         <Header {...headerProps} openFrontEnd={openFrontEnd} openFullStack={openFullStack} openWordPress={openWordPress} />
       </div>
