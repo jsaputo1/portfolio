@@ -9,7 +9,7 @@ function Header(props) {
 
   return <header className="header-container">
     <div className="left-side-header">
-      <h3>{props.title}</h3>
+      <a href={props.headerLink}><h3>{props.title}</h3></a>
     </div>
     <div className="left-side-header-mobile">
       <Dropdown isOpen={dropdownOpen} toggle={toggle}>
@@ -17,8 +17,8 @@ function Header(props) {
           <i class="fas fa-bars"></i>
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem ><a href="#word-press" onClick={() => { props.openWordPress(); }}>Word Press</a></DropdownItem>
           <DropdownItem><a href="#full-stack" onClick={() => { props.openFullStack(); }}>Full Stack</a></DropdownItem>
+          <DropdownItem ><a href="#word-press" onClick={() => { props.openWordPress(); }}>Word Press</a></DropdownItem>
           <DropdownItem><a href="#front-end" onClick={() => { props.openFrontEnd(); }}>Front End</a></DropdownItem>
         </DropdownMenu>
       </Dropdown>

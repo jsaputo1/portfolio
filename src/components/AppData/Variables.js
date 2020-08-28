@@ -1,5 +1,5 @@
 export const githubLink = "https://github.com/jsaputo1/";
-export const email = "jsaputo1@gmail.com";
+export const email = "mailto:jsaputo1@gmail.com";
 export const linkedIn = "https://www.linkedin.com/in/john-saputo-09a53b7b/";
 
 //Category header positions

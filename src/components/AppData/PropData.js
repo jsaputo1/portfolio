@@ -8,6 +8,7 @@ export const headerProps = {
   githubLink: githubLink,
   email: email,
   linkedIn: linkedIn,
+  headerLink: "#top",
 };
 
 export const fullStackJsx =
@@ -54,6 +55,7 @@ export const heroProps = {
   tag: "Web Developer",
   gitHubLink: githubLink,
   email: email,
+  linkedIn: linkedIn,
   article: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet ante ante. Nulla facilisi. Proinvitae libero sapien. Mauris at pretium ipsum, at eleifend velit. Donec lorem dui, tempus ac dignissim eget, porta et justo. Praesent eget laoreet elit, nec congue ante..",
   image: "/images/hero-banner3.png",
 };
@@ -67,6 +69,13 @@ export const sliderSettings = {
       breakpoint: 1050,
       settings: {
         slidesToShow: 2,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 1,
         dots: true,
       }
     }
