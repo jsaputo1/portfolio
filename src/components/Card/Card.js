@@ -1,5 +1,8 @@
 import React from "react";
 import "./Card.scss";
+// import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/youtube';
+// import ReactPlayer from 'react-player/lazy'
 
 function Card(props) {
   return <div className="card-container">
@@ -7,9 +10,15 @@ function Card(props) {
       <h3 className="card-title">{props.title}</h3>
     </div>
     <figure className="card-figure">
-      <a href={props.demoLink} target="new">
-        <img src={props.thumbnail} alt="website-preview" />
-      </a>
+      {!props.video ? (
+        <a href={props.demoLink} target="new">
+          <img src={props.thumbnail} alt="website-preview" />
+        </a>
+      ) : (
+          <div className="embedded-video">
+            <ReactPlayer url={props.video} width="300" height="250" className="react-player" />
+          </div>
+        )}
       <div className="card-information-header">
         <h3>Information</h3>
         <div className="website-links">
