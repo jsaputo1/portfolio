@@ -1,5 +1,5 @@
 $gold: #85714d;
-$darkGrey: #222223;
+$darkGrey: #181719;
 $lightGrey: #393939;
 $darkBlue: #1d2d5c;
 $lightBlue: #134a8e;
@@ -8,4 +8,5 @@ $charcoalBlue: #2f4858;
 $queenblue: #33658a;
 $linen: #f5e9e2;
 $gold: #e6c79c;
-$blueGradient: linear-gradient(90deg, rgba(29, 45, 92, 1) 35%, rgba(19, 74, 142, 1) 100%);
+$greyGradient: linear-gradient(45deg, $lightGrey 0%, $darkGrey 100%);
+$blueGradient: linear-gradient(45deg, $gunMetalBlue 0%, $charcoalBlue 100%);
