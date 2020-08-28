@@ -11,6 +11,7 @@ function Hero(props) {
           <h4>{props.tag}</h4>
           <span><a href={props.gitHubLink} target="new"><i class="fab fa-github"></i></a></span>
           <span><a href={props.email} target="new"><i class="fas fa-envelope-square"></i></a></span>
+          <span><a href={props.linkedIn} target="new"><i class="fab fa-linkedin"></i></a></span>
         </div>
       </div>
       <h3 className="hero-article">{props.article} </h3>
