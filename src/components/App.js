@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "./Header/Header";
-// import Card from "./Card/Card";
 import Category from "./Category/Category";
 import Hero from "./Hero/Hero";
 import Slider from "react-slick";
@@ -34,27 +33,6 @@ function App() {
         <section className="hero">
           <Hero {...heroProps} />
         </section>
-        <section className="word-press-projects" id="word-press">
-          {!wordPressOpen ?
-            (
-              <div>
-                <Category title="Word Press" toggle={toggleWordPress} position={closed} idLink={"#word-press"} />
-                <div className="word-press-projects empty-project slide-up" />
-              </div>
-            ) :
-            (
-              <div>
-                <Category title="Word Press" toggle={toggleWordPress} position={open} idLink={"#word-press"} />
-                <div className="project-container-mobile">
-                  {wordPressJsx}
-                </div>
-                <Slider {...sliderSettings}>
-                  {wordPressJsx}
-                </Slider>
-              </div>
-            )
-          }
-        </section>
         <section className="full-stack-projects" id="full-stack">
           {!fullStackOpen ?
             (
@@ -71,6 +49,27 @@ function App() {
                 </div>
                 <Slider {...sliderSettings}>
                   {fullStackJsx}
+                </Slider>
+              </div>
+            )
+          }
+        </section>
+        <section className="word-press-projects" id="word-press">
+          {!wordPressOpen ?
+            (
+              <div>
+                <Category title="Word Press" toggle={toggleWordPress} position={closed} idLink={"#word-press"} />
+                <div className="word-press-projects empty-project slide-up" />
+              </div>
+            ) :
+            (
+              <div>
+                <Category title="Word Press" toggle={toggleWordPress} position={open} idLink={"#word-press"} />
+                <div className="project-container-mobile">
+                  {wordPressJsx}
+                </div>
+                <Slider {...sliderSettings}>
+                  {wordPressJsx}
                 </Slider>
               </div>
             )
