@@ -14,7 +14,15 @@ function Card(props) {
         <h3>Information</h3>
         <div className="website-links">
           <span><a href={props.githubLink} target="new"><i class="fab fa-github"></i></a></span>
-          <span><a href={props.demoLink} target="new"><i class="fas fa-external-link-alt"></i></a></span>
+          {props.demoLink != null ? (
+            <span>
+              <span><a href={props.demoLink} target="new"><i class="fas fa-external-link-alt"></i></a></span>
+            </span>
+          ) : (
+              <div>
+              </div>
+            )
+          }
         </div>
       </div>
       <div className="card-information-details">
