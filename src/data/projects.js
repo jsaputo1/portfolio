@@ -1,6 +1,3 @@
-const scoreName = "The Score"
-const link = scoreName.link("http://www.thescore.ca")
-
 const frontEndProjects = {
 
   s1: {
@@ -42,7 +39,6 @@ const frontEndProjects = {
     technologies: "React, JavaScript, SASS, Storybook",
     notes: null,
   }
-
 };
 
 const fullStackProjects = {
@@ -86,7 +82,6 @@ const fullStackProjects = {
     technologies: "JavaScript, EJS, CSS, HTML, Node, Express, Mocha, Chai",
     notes: " The app has not been deployed yet, please visit the GitHub link for screenshots",
   },
-
 };
 
 const wordPressProjects = {
@@ -120,11 +115,6 @@ const wordPressProjects = {
     technologies: "WordPress, PHP, SASS, jQuery, gulp",
     notes: "This was designed specifically for mobile.",
   },
-
-
 };
-
-
-
 
 module.exports = { frontEndProjects, fullStackProjects, wordPressProjects };
