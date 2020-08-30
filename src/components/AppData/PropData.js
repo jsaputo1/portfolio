@@ -56,7 +56,7 @@ export const heroProps = {
   gitHubLink: githubLink,
   email: email,
   linkedIn: linkedIn,
-  article: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet ante ante. Nulla facilisi. Proinvitae libero sapien. Mauris at pretium ipsum, at eleifend velit. Donec lorem dui, tempus ac dignissim eget, porta et justo. Praesent eget laoreet elit, nec congue ante..",
+  article: " Welcome to my portfolio, I am a web developer based in Toronto, Canada. I created this site to showcase the projects I've developed. Check out some of my featured work below.",
   image: "/images/hero-banner3.png",
 };
 
