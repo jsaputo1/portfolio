@@ -19,6 +19,14 @@ const cardObject = {
 };
 
 export const Default = () => <Card
+  thumbnail={cardObject.thumbnail}
+/>;
+
+Default.story = {
+  name: "Default",
+};
+
+export const Hover = () => <Card
   title={cardObject.title}
   demoLink={cardObject.demoLink}
   githubLink={cardObject.githubLink}
@@ -26,9 +34,8 @@ export const Default = () => <Card
   description={cardObject.description}
   technologies={cardObject.technologies}
   notes={cardObject.notes}
-
 />;
 
-Default.story = {
-  name: "Default",
+Hover.story = {
+  name: "Hover",
 };
