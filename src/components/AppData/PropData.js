@@ -34,6 +34,7 @@ export const wordPressJsx =
       description={wordPressProjects[key].description}
       technologies={wordPressProjects[key].technologies}
       notes={wordPressProjects[key].notes}
+      state={true}
     />;
   });
 
