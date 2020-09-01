@@ -7,10 +7,10 @@ function Card(props) {
 
   return <div className="card-container">
     <div className="card-figure" onMouseEnter={toggleCardHover} onMouseLeave={toggleCardHover}>
-      {!cardHover ? (
+      {!props.state ? (
         <img src={props.thumbnail} />
       ) : (
-          <div>
+          <div className="card-text-container">
             <div className="card-text">
               <h2>{props.title}</h2>
               <h3>{props.description}</h3>
