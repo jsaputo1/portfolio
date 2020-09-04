@@ -1,7 +1,13 @@
 import React, { useState } from "react";
+import useApplicationData from "../hooks/useApplicationData";
 import "./Nav.scss";
 
 function Nav(props) {
+  const {
+    state,
+    setCategory
+  } = useApplicationData();
+
   const [allOpen, setAllOpen] = useState(false);
   const toggleAllOpen = () => setAllOpen(true);
   const toggleAllClosed = () => setAllOpen(false);
@@ -25,6 +31,8 @@ function Nav(props) {
     toggleFrontEndClosed();
   };
 
+  console.log(state);
+
   return (
     <nav>
       <ul>
@@ -33,6 +41,7 @@ function Nav(props) {
           onClick={() => {
             toggleOff();
             toggleAllOpen();
+            setCategory("allOpen");
           }}>
           All</li>
         <li className=
@@ -40,6 +49,7 @@ function Nav(props) {
           onClick={() => {
             toggleOff();
             toggleFullStackOpen();
+            setCategory("fullStackOpen");
           }}>
           Full Stack</li>
         <li className=
@@ -47,12 +57,14 @@ function Nav(props) {
           onClick={() => {
             toggleOff();
             toggleWordPressOpen();
+            setCategory("wordPressOpen");
           }}>
           Word Press</li>
         <li className={!frontEndOpen ? "nav-list-item" : "nav-list-item active"}
           onClick={() => {
             toggleOff();
             toggleFrontEndOpen();
+            setCategory("frontEndOpen");
           }}
         >
           Front End</li>
