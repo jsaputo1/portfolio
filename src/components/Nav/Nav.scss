@@ -1,0 +1,19 @@
+@import "../../styles/shared.scss";
+
+nav {
+  color: white;
+
+  ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+  }
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.active {
+  border-bottom: 1px solid white;
+}
