@@ -1,27 +1,49 @@
-import React, { useState } from "react";
-import useApplicationData from "../hooks/useApplicationData";
+import React from "react";
 import "./Category.scss";
+const { wordPressJsx, fullStackJsx, frontEndJsx } = require("../AppData/PropData");
 
 function Category(props) {
-
-  console.log("Category props", props)
-
-  const {
-    state,
-    setCategory
-  } = useApplicationData();
-
-  console.log("Category state", state)
-
-  return <div>
-    <li className=
-      {state.category !== props.name ? "nav-list-item" : "nav-list-item active"}
-      onClick={() => {
-        props.toggleOff();
-        props.toggleCategory();
-        setCategory(props.name)
-      }}>
-      {props.name}</li>
+  return <div className="category">
+    {props.state !== "allOpen" ?
+      (
+        <div className="empty-project" />
+      ) :
+      (
+        <div className="project-gallery-container">
+          <h1>All</h1>
+        </div>
+      )
+    }
+    {props.state !== "fullStackOpen" ?
+      (
+        <div className="empty-project" />
+      ) :
+      (
+        <div className="project-gallery-container">
+          {fullStackJsx}
+        </div>
+      )
+    }
+    {props.state !== "wordPressOpen" ?
+      (
+        <div className="empty-project" />
+      ) :
+      (
+        <div className="project-gallery-container">
+          {wordPressJsx}
+        </div>
+      )
+    }
+    {props.state !== "frontEndOpen" ?
+      (
+        <div className="empty-project" />
+      ) :
+      (
+        <div className="project-gallery-container">
+          {frontEndJsx}
+        </div>
+      )
+    }
   </div>;
 }
 
