@@ -2,15 +2,18 @@ import React, { useState } from "react";
 import Header from "./Header/Header";
 import Category from "./Category/Category";
 import Hero from "./Hero/Hero";
-import Slider from "react-slick";
-import Nav from "./Nav/Nav"
+import Nav from "./Nav/Nav";
+import useApplicationData from "./hooks/useApplicationData";
 import "./App.scss";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-const { headerProps, wordPressJsx, fullStackJsx, frontEndJsx, heroProps, sliderSettings } = require("./AppData/PropData");
-const { open, closed } = require("./AppData/Variables");
+const { headerProps, heroProps, } = require("./AppData/PropData");
 
 function App() {
+
+  const {
+    state,
+    setCategory
+  } = useApplicationData();
+
 
   //Set state for portfolio categories
   const [frontEndOpen, setFrontEndOpen] = useState(false);
@@ -30,68 +33,17 @@ function App() {
       <div className="App-header">
         <Header {...headerProps} openFrontEnd={openFrontEnd} openFullStack={openFullStack} openWordPress={openWordPress} />
       </div>
-      <div>
-        <Nav></Nav>
-      </div>
       <div className="container">
         <section className="hero">
           <Hero {...heroProps} />
         </section>
-        <section className="full-stack-projects" id="full-stack">
-          {!fullStackOpen ?
-            (
-              <div>
-                <Category title="Full Stack" toggle={toggleFullStack} position={closed} />
-                <div class="full-stack-projects empty-project slide-up" />
-              </div>
-            ) :
-            (
-              <div>
-              </div>
-            )
-          }
-        </section>
-        <section className="word-press-projects" id="word-press">
-          {!wordPressOpen ?
-            (
-              <div>
-                <Category title="Word Press" toggle={toggleWordPress} position={closed} idLink={"#word-press"} />
-                <div className="word-press-projects empty-project slide-up" />
-              </div>
-            ) :
-            (
-              <div>
-                <Category title="Word Press" toggle={toggleWordPress} position={open} idLink={"#word-press"} />
-                <div className="project-container-mobile">
-                  {wordPressJsx}
-                </div>
-                <Slider {...sliderSettings}>
-                  {wordPressJsx}
-                </Slider>
-              </div>
-            )
-          }
-        </section>
-        <section className="front-end-projects" id="front-end">
-          {!frontEndOpen ?
-            (
-              <div>
-                <Category title="Front End" toggle={toggleFrontEnd} position={closed} idLink={"#front-end"} />
-                <div class="front-end-projects empty-project slide-up" />
-              </div>
-            ) :
-            (
-              <div>
-                <Category title="Front End" toggle={toggleFrontEnd} position={open} idLink={"#front-end"} />
-                <div className="project-container-mobile">
-                  {frontEndJsx}
-                </div>
-                <Slider {...sliderSettings}>
-                  {frontEndJsx}
-                </Slider>
-              </div>
-            )
-          }
+        <div>
+          <Nav setCategory={setCategory}></Nav>
+        </div>
+        <section className="project-gallery">
+          <div className="project-gallery-container">
+            <Category state={state.category} />
+          </div>
         </section>
       </div>
     </div>
