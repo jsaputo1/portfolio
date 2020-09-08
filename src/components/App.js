@@ -3,6 +3,7 @@ import Header from "./Header/Header";
 import Category from "./Category/Category";
 import Hero from "./Hero/Hero";
 import Slider from "react-slick";
+import Nav from "./Nav/Nav"
 import "./App.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,6 +30,9 @@ function App() {
       <div className="App-header">
         <Header {...headerProps} openFrontEnd={openFrontEnd} openFullStack={openFullStack} openWordPress={openWordPress} />
       </div>
+      <div>
+        <Nav></Nav>
+      </div>
       <div className="container">
         <section className="hero">
           <Hero {...heroProps} />
@@ -43,13 +47,6 @@ function App() {
             ) :
             (
               <div>
-                <Category title="Full Stack" toggle={toggleFullStack} position={open} idLink={"#full-stack"} />
-                <div className="project-container-mobile">
-                  {fullStackJsx}
-                </div>
-                <Slider {...sliderSettings}>
-                  {fullStackJsx}
-                </Slider>
               </div>
             )
           }
