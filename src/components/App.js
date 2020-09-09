@@ -41,9 +41,7 @@ function App() {
           <Nav setCategory={setCategory}></Nav>
         </div>
         <section className="project-gallery">
-          <div className="project-gallery-container">
-            <Category state={state.category} />
-          </div>
+          <Category state={state.category} />
         </section>
       </div>
     </div>
