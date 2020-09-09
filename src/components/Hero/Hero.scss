@@ -1,49 +1,29 @@
 @import "../../styles/shared.scss";
 
 .hero-container {
-  color: #ffffff;
   display: flex;
-  img {
-    height: 475px;
-  }
+  justify-content: center;
+  height: 100vh;
 }
 
 .hero-text {
-  padding: 0px 75px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero-title {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-.hero-tag {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 6px;
-  h4 {
-    padding-top: 10px;
-    padding-right: 10px;
-    font-size: 0.9rem;
-    font-style: italic;
+  margin-top: 10%;
+  font-size: 3rem;
+  text-align: center;
+  h1 {
     color: $gold;
+    margin: 15px 0px;
   }
-  i {
-    letter-spacing: 15px;
-    font-size: 1.2rem;
-  }
-  a {
-    color: #ffffff;
-    &:hover {
-      color: $gold;
-    }
+
+  button {
+    color: white;
+    margin-top: 50px;
+    background: none;
+    border: 1px solid $gold;
+    padding: 20px 30px;
   }
 }
 
-.hero-article {
-  margin-top: 20px;
+.hero-name {
+  color: white;
 }
