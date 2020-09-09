@@ -1,15 +1,16 @@
 @import "../../styles/shared.scss";
 
 .card-container {
-  width: 300px;
-  height: 250px;
-  background-color: #ffffff;
-  border: 2px solid black;
 }
 
 .card-figure {
+  border: 2px solid black;
   height: 250px;
   width: 300px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .card-text-container {
