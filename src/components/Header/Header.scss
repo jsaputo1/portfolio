@@ -1,7 +1,7 @@
 @import "../../styles/shared.scss";
 
 .header-container {
-  display: flex !important;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background: $blueGradient;
