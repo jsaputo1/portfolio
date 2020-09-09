@@ -34,7 +34,7 @@ function Nav(props) {
           onClick={() => {
             toggleOff();
             toggleAllOpen();
-            props.setCategory("allOpen");
+            props.setCategory("default");
           }}
         >
           All</li>

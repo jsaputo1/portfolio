@@ -3,15 +3,16 @@ import "./Category.scss";
 const { wordPressJsx, fullStackJsx, frontEndJsx } = require("../AppData/PropData");
 
 function Category(props) {
+  console.log("category props", props.state);
   return <div className="category">
-    {props.state !== "allOpen" ?
-      (
-        <div className="empty-project" />
-      ) :
+    {props.state === ("default") ?
       (
         <div className="project-gallery-container">
           <h1>All</h1>
         </div>
+      ) :
+      (
+        <div className="empty-project" />
       )
     }
     {props.state !== "fullStackOpen" ?
