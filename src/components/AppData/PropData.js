@@ -11,6 +11,13 @@ export const headerProps = {
   headerLink: "#top",
 };
 
+
+export const heroProps = {
+  name: "John Saputo",
+  tagline: "I'm a web developer"
+};
+
+
 export const fullStackJsx =
   Object.keys(fullStackProjects).map(function (key) {
     return <Card
@@ -50,35 +57,3 @@ export const frontEndJsx =
       notes={frontEndProjects[key].notes}
     />;
   });
-
-export const heroProps = {
-  title: "John Saputo",
-  tag: "Web Developer",
-  gitHubLink: githubLink,
-  email: email,
-  linkedIn: linkedIn,
-  article: " Welcome to my portfolio, I am a web developer based in Toronto, Canada. I created this site to showcase the projects I've developed. Check out some of my featured work below.",
-  image: "/images/hero-banner3.png",
-};
-
-
-export const sliderSettings = {
-  slidesToShow: 3,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 1050,
-      settings: {
-        slidesToShow: 2,
-        dots: true,
-      }
-    },
-    {
-      breakpoint: 850,
-      settings: {
-        slidesToShow: 1,
-        dots: true,
-      }
-    }
-  ]
-};
