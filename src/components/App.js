@@ -40,7 +40,7 @@ function App() {
         <div>
           <Nav setCategory={setCategory}></Nav>
         </div>
-        <section className="project-gallery">
+        <section className="project-gallery" id="projects">
           <Category state={state.category} />
         </section>
       </div>
