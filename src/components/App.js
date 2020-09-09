@@ -33,10 +33,10 @@ function App() {
       <div className="App-header">
         <Header {...headerProps} openFrontEnd={openFrontEnd} openFullStack={openFullStack} openWordPress={openWordPress} />
       </div>
+      <section className="hero">
+        <Hero {...heroProps} />
+      </section>
       <div className="container">
-        <section className="hero">
-          <Hero {...heroProps} />
-        </section>
         <div>
           <Nav setCategory={setCategory}></Nav>
         </div>
