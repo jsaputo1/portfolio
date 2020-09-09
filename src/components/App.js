@@ -30,12 +30,12 @@ function App() {
 
   return (
     <div className="App" id="top">
-      <div className="App-header">
-        <Header {...headerProps} openFrontEnd={openFrontEnd} openFullStack={openFullStack} openWordPress={openWordPress} />
-      </div>
       <section className="hero">
         <Hero {...heroProps} />
       </section>
+      <div className="App-header">
+        <Header {...headerProps} openFrontEnd={openFrontEnd} openFullStack={openFullStack} openWordPress={openWordPress} />
+      </div>
       <div className="container">
         <div>
           <Nav setCategory={setCategory}></Nav>
