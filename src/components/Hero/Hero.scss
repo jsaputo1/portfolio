@@ -17,18 +17,20 @@
     color: $gold;
     margin: 15px 0px;
   }
-
-  button {
-    color: white;
-    margin-top: 50px;
-    background: none;
-    border: 1px solid $gold;
-    padding: 20px 30px;
-  }
 }
 
 .hero-name {
   color: white;
+}
+
+.hero-button {
+  margin-top: 100px;
+  a {
+    color: white;
+    background: none;
+    border: 1px solid $gold;
+    padding: 20px 30px;
+  }
 }
 
 @keyframes gradient {

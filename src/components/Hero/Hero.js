@@ -17,9 +17,11 @@ function Hero(props) {
     <div className="hero-text">
       <h1>Hello, I'm <span className="hero-name">{props.name}</span></h1>
       <h1>{props.tagline}</h1>
-      <a href="#projects">
-        View my work <i class="fas fa-arrow-down"></i>
-      </a>
+      <div className="hero-button">
+        <a href="#projects">
+          View my work <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
     </div>
   </div>;
 }
