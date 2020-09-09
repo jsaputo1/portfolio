@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./Card.scss";
 
 function Card(props) {
-  const [cardHover, setcardHover] = useState(false);
-  const toggleCardHover = () => setcardHover(prevState => !prevState);
+  const [cardHover, setCardHover] = useState(false);
+  const toggleCardHover = () => setCardHover(prevState => !prevState);
 
   return <div className="card-container">
     <div className="card-figure" onMouseEnter={toggleCardHover} onMouseLeave={toggleCardHover}>
-      {!props.state ? (
+      {!cardHover ? (
         <img src={props.thumbnail} />
       ) : (
           <div className="card-text-container">
