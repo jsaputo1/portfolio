@@ -6,7 +6,7 @@ function Card(props) {
   const toggleCardHover = () => setCardHover(prevState => !prevState);
 
   return <div className="card-container">
-    <div className="card-figure" onMouseEnter={toggleCardHover} onMouseLeave={toggleCardHover}>
+    <div className={cardHover ? "card-figure fade-in" : "card-figure"} onMouseEnter={toggleCardHover} onMouseLeave={toggleCardHover}>
       {!cardHover ? (
         <img src={props.thumbnail} />
       ) : (
