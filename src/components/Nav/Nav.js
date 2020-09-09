@@ -3,7 +3,7 @@ import "./Nav.scss";
 
 function Nav(props) {
 
-  const [allOpen, setAllOpen] = useState(false);
+  const [allOpen, setAllOpen] = useState(true);
   const toggleAllOpen = () => setAllOpen(true);
   const toggleAllClosed = () => setAllOpen(false);
 
