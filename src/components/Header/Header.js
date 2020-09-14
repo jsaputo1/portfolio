@@ -7,7 +7,17 @@ function Header(props) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggle = () => setDropdownOpen(prevState => !prevState);
 
-  return <header className="header-container">
+  window.onscroll = function () {
+    console.log(window.pageYOffset);
+    if (window.pageYOffset < 470) {
+      props.setSticky(false);
+    }
+    else if (window.pageYOffset > 850) {
+      props.setSticky(true);
+    }
+  };
+
+  return <header className={props.sticky ? "header-container sticky" : "header-container"}>
     <div className="left-side-header">
       <a href={props.headerLink}><h3>{props.title}</h3></a>
     </div>
