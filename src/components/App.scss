@@ -4,13 +4,9 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  height: 100vh;
 }
 
-.header-container {
-  // position: fixed;
-  // top: 0;
-  width: 100%;
-}
 .App-header {
   margin-bottom: 20px;
 }
@@ -26,10 +22,6 @@
   margin-bottom: 50px;
   -webkit-animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-#projects {
-  height: 82.5vh;
 }
 
 //Tablet View Settings
