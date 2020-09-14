@@ -11,9 +11,9 @@ function App() {
 
   const {
     state,
-    setCategory
+    setCategory,
+    setSticky
   } = useApplicationData();
-
 
   //Set state for portfolio categories
   const [frontEndOpen, setFrontEndOpen] = useState(false);
@@ -31,10 +31,15 @@ function App() {
   return (
     <div className="App" id="top">
       <section className="hero">
-        <Hero {...heroProps} />
+        <Hero {...heroProps} setSticky={setSticky} />
       </section>
       <div className="App-header">
-        <Header {...headerProps} openFrontEnd={openFrontEnd} openFullStack={openFullStack} openWordPress={openWordPress} />
+        <Header
+          {...headerProps} openFrontEnd={openFrontEnd}
+          openFullStack={openFullStack}
+          openWordPress={openWordPress}
+          sticky={state.sticky}
+          setSticky={setSticky} />
       </div>
       <div className="container">
         <div>
@@ -47,6 +52,6 @@ function App() {
     </div>
   );
 
-}
+};
 export default App;
 
