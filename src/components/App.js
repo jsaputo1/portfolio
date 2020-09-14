@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App" id="top">
       <section className="hero">
-        <Hero {...heroProps} setSticky={setSticky} />
+        <Hero {...heroProps} />
       </section>
       <div className="App-header">
         <Header
@@ -42,10 +42,10 @@ function App() {
           setSticky={setSticky} />
       </div>
       <div className="container">
-        <div>
-          <Nav setCategory={setCategory}></Nav>
+        <div id="projects">
+          <Nav setCategory={setCategory} />
         </div>
-        <section className="project-gallery" id="projects">
+        <section className="project-gallery">
           <Category state={state.category} />
         </section>
       </div>
