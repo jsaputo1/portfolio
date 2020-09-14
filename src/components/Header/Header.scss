@@ -11,6 +11,12 @@
   z-index: 1;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .left-side-header {
   padding-left: 30px;
   a {
