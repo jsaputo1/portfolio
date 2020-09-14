@@ -3,7 +3,6 @@ import "./Category.scss";
 const { wordPressJsx, fullStackJsx, frontEndJsx } = require("../AppData/PropData");
 
 function Category(props) {
-  console.log("category props", props.state);
   return <div className="category">
     {props.state === ("default") ?
       (
