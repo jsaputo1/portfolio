@@ -1,19 +1,20 @@
 @import "../../styles/shared.scss";
 
 nav {
-  color:black;
-  
+  color: $charcoalBlue;
+
   ul {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
   }
 
   li {
     cursor: pointer;
+    padding: 20px 10px;
   }
 }
 
 .active {
-  border-bottom: 1px solid black;
+  border-bottom: 4px solid $charcoalBlue;
 }
