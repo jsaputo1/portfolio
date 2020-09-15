@@ -20,8 +20,8 @@ function Card(props) {
               <h3>{props.description}</h3>
             </div>
             <div className="card-links">
-              <a href={props.githubLink} target="new">GitHub</a>
-              <a href={props.demoLink} target="new">Demo</a>
+              <a href={props.githubLink} target="new"><i class="fab fa-github"></i></a>
+              <a href={props.demoLink} target="new"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
         )
