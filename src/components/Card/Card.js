@@ -10,7 +10,7 @@ function Card(props) {
   };
 
   return <div className="card-container">
-    <div className={cardHover ? "card-figure fade-in" : "card-figure"} onMouseEnter={toggleCardHover} onMouseLeave={toggleCardHover}>
+    <div className={cardHover ? "card-figure card-hover-animation" : "card-figure"} onMouseEnter={toggleCardHover} onMouseLeave={toggleCardHover}>
       {!cardHover ? (
         <img src={props.thumbnail} />
       ) : (
@@ -20,8 +20,8 @@ function Card(props) {
               <h3>{props.description}</h3>
             </div>
             <div className="card-links">
-              <a href={props.gitHub}>GitHub</a>
-              <a href={props.demoLink}>Demo</a>
+              <a href={props.githubLink} target="new">GitHub</a>
+              <a href={props.demoLink} target="new">Demo</a>
             </div>
           </div>
         )
