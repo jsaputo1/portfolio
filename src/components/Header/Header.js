@@ -9,15 +9,15 @@ function Header(props) {
 
   window.onscroll = function () {
     console.log(window.pageYOffset);
-    if (window.pageYOffset < 470) {
+    if (window.pageYOffset < 821) {
       props.setSticky(false);
     }
-    else if (window.pageYOffset > 850) {
+    else if (window.pageYOffset > 804) {
       props.setSticky(true);
     }
   };
 
-  return <header className={props.sticky ? "header-container sticky" : "header-container"}>
+  return <header className={props.sticky ? "header-container sticky slide-down" : "header-container"}>
     <div className="left-side-header">
       <a href={props.headerLink}><h3>{props.title}</h3></a>
     </div>
