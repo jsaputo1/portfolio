@@ -29,7 +29,7 @@ function App() {
   const openWordPress = () => setWordPressOpen(true);
 
   return (
-    <div className="App" id="top">
+    <div className="App">
       <section className="hero">
         <Hero {...heroProps} />
       </section>
@@ -41,7 +41,7 @@ function App() {
           sticky={state.sticky}
           setSticky={setSticky} />
       </div>
-      <div className="container">
+      <div className="container" id="top">
         <div id="projects">
           <Nav setCategory={setCategory} />
         </div>
