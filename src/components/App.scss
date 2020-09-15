@@ -18,6 +18,10 @@
   padding: 0px 80px;
 }
 
+nav {
+  margin-top: 50px;
+}
+
 .card-container {
   margin-bottom: 50px;
   -webkit-animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -25,7 +29,7 @@
 }
 
 #projects {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 140px;
 }
 
 //Tablet View Settings
