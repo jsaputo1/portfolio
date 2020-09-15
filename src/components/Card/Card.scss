@@ -2,6 +2,7 @@
 
 .card-container {
   border: 2px solid $darkBlue;
+  cursor: default;
 }
 
 .card-figure {
@@ -20,7 +21,7 @@
   align-items: center;
   justify-content: space-around;
   &:hover {
-    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 1.00);
+    box-shadow: 0 12px 20px -12px rgba(34, 49, 63, 1);
   }
 }
 
