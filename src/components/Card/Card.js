@@ -6,7 +6,7 @@ function Card(props) {
   const toggleCardHover = () => setCardHover(prevState => !prevState);
 
   const background = {
-    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(${props.thumbnail})`
+    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(${props.thumbnail})`
   };
 
   return <div className="card-container">
