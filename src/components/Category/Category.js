@@ -6,9 +6,9 @@ function Category(props) {
   return <div className="category">
     {props.state === ("default") ?
       (
-        <div className="project-gallery-container fade-in ">
-          {fullStackJsx}
+        <div className="project-gallery-container">
           {wordPressJsx}
+          {fullStackJsx}
           {frontEndJsx}
         </div>
       ) :
@@ -21,7 +21,7 @@ function Category(props) {
         <div className="empty-project" />
       ) :
       (
-        <div className="project-gallery-container fade-in">
+        <div className="project-gallery-container">
           {fullStackJsx}
         </div>
       )
@@ -31,7 +31,7 @@ function Category(props) {
         <div className="empty-project" />
       ) :
       (
-        <div className="project-gallery-container fade-in">
+        <div className="project-gallery-container">
           {wordPressJsx}
         </div>
       )
@@ -41,7 +41,7 @@ function Category(props) {
         <div className="empty-project" />
       ) :
       (
-        <div className="project-gallery-container fade-in">
+        <div className="project-gallery-container">
           {frontEndJsx}
         </div>
       )
