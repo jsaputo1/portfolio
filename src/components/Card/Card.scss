@@ -19,6 +19,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  &:hover {
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 1.00);
+  }
 }
 
 .card-text {
@@ -41,7 +44,7 @@
     color: $darkBlue;
     line-height: 1.4;
   }
-  animation-name: slide-down;
+  animation-name: slide-bottom;
   animation-duration: 1s;
 }
 
@@ -61,5 +64,5 @@
 
 .card-hover-animation {
   animation-name: fadein;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
