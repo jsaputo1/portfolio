@@ -5,7 +5,6 @@
 }
 
 .card-figure {
-
   height: 250px;
   width: 300px;
   img {
@@ -32,10 +31,17 @@
   h3 {
     font-size: 0.8rem;
   }
+  animation-name: slide-down;
+  animation-duration: 1s;
 }
 
 .card-links {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+.card-hover-animation {
+  animation-name: fadein;
+  animation-duration: 1.5s;
 }
