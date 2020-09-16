@@ -1,8 +1,11 @@
 @import "../../styles/shared.scss";
 
 .card-container {
-  border: 2px solid $darkBlue;
+  border: 0.5px solid $darkBlue;
   cursor: default;
+  &:hover {
+    border: none;
+  }
 }
 
 .card-figure {
