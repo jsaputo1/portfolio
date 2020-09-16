@@ -16,17 +16,14 @@ function App() {
   } = useApplicationData();
 
   //Set state for portfolio categories
-  const [frontEndOpen, setFrontEndOpen] = useState(false);
-  const toggleFrontEnd = () => setFrontEndOpen(prevState => !prevState);
-  const openFrontEnd = () => setFrontEndOpen(true);
+  const [frontEndOpen] = useState(false);
+  const openFrontEnd = () => frontEndOpen(true);
 
-  const [fullStackOpen, setFullStackOpen] = useState(false);
-  const toggleFullStack = () => setFullStackOpen(prevState => !prevState);
-  const openFullStack = () => setFullStackOpen(true);
+  const [fullStackOpen] = useState(false);
+  const openFullStack = () => fullStackOpen(true);
 
-  const [wordPressOpen, setWordPressOpen] = useState(false);
-  const toggleWordPress = () => setWordPressOpen(prevState => !prevState);
-  const openWordPress = () => setWordPressOpen(true);
+  const [wordPressOpen] = useState(false);
+  const openWordPress = () => wordPressOpen(true);
 
   return (
     <div className="App">
