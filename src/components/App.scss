@@ -39,7 +39,27 @@ nav {
 //Tablet View Settings
 
 @include tablet {
+  .project-gallery-container {
+    justify-content: space-evenly;
+    padding: 0;
+  }
 }
 
+//Mobile View Settings
+
 @include mobile {
+  .hero {
+    display: none;
+  }
+
+  nav {
+    margin-top: 0px;
+  }
+
+  .left-side-header {
+    h3 {
+      font-size: 1.8rem;
+    }
+
+  }
 }
