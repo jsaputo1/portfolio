@@ -16,7 +16,7 @@ function Card(props) {
       onTouchEnter={toggleCardHover}
     >
       {!cardHover ? (
-        <img src={props.thumbnail} alt="project-thumbnail"/>
+        <img src={props.thumbnail} alt="project-thumbnail" />
       ) : (
           <div className="card-text-container" style={background}>
             <div className="card-text">
@@ -25,7 +25,7 @@ function Card(props) {
             </div>
             <div className="card-links">
               <a href={props.githubLink} target="new"><i class="fab fa-github"></i></a>
-              <a href={props.demoLink} target="new"><i class="fas fa-external-link-alt"></i></a>
+              <a href={props.demoLink} target="new"><i class={props.demoLink === null ? "hidden" : "fas fa-external-link-alt"}></i></a>
             </div>
           </div>
         )
