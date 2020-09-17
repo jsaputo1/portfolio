@@ -18,10 +18,8 @@ function App() {
   //Set state for portfolio categories
   const [frontEndOpen] = useState(false);
   const openFrontEnd = () => frontEndOpen(true);
-
   const [fullStackOpen] = useState(false);
   const openFullStack = () => fullStackOpen(true);
-
   const [wordPressOpen] = useState(false);
   const openWordPress = () => wordPressOpen(true);
 
@@ -32,7 +30,8 @@ function App() {
       </section>
       <div className="App-header">
         <Header
-          {...headerProps} openFrontEnd={openFrontEnd}
+          {...headerProps}
+          openFrontEnd={openFrontEnd}
           openFullStack={openFullStack}
           openWordPress={openWordPress}
           sticky={state.sticky}
