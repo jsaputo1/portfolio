@@ -10,9 +10,13 @@ function Card(props) {
   };
 
   return <div className="card-container">
-    <div className={cardHover ? "card-figure card-hover-animation" : "card-figure"} onMouseEnter={toggleCardHover} onMouseLeave={toggleCardHover}>
+    <div className={cardHover ? "card-figure card-hover-animation" : "card-figure"}
+      onMouseEnter={toggleCardHover}
+      onMouseLeave={toggleCardHover}
+      onTouchEnter={toggleCardHover}
+    >
       {!cardHover ? (
-        <img src={props.thumbnail} />
+        <img src={props.thumbnail} alt="project-thumbnail"/>
       ) : (
           <div className="card-text-container" style={background}>
             <div className="card-text">
