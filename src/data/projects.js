@@ -2,7 +2,7 @@ const frontEndProjects = {
 
   s1: {
     title: "Aloha",
-    demoLink: "https://www.johnsaputo.net/aloha",
+    demoLink: "https://aloha.johnsaputo.net/",
     githubLink: "https://github.com/jsaputo1/aloha",
     thumbnail: "/images/thumbnails/aloha.png",
     description: "Aloha is a single page design of an online clothing store. It was designed mobile first with responsive views for Tablet and Desktop.",
@@ -12,7 +12,7 @@ const frontEndProjects = {
 
   s2: {
     title: "Instanews",
-    demoLink: "https://www.johnsaputo.net/instanews",
+    demoLink: "https://instanews.johnsaputo.net/",
     githubLink: "https://github.com/jsaputo1/instanews",
     thumbnail: "/images/thumbnails/instanews.png",
     description: "Instanews is a single page web app that allows users to filter top news stories pulled from the New York Times API. Designed mobile first, it is fully responsive with views for mobile, tablet and desktop.",
@@ -21,13 +21,13 @@ const frontEndProjects = {
   },
 
   s3: {
-    title: "Fifa Teams",
-    demoLink: "https://www.johnsaputo.net/fifa",
-    githubLink: null,
-    thumbnail: "/images/thumbnails/fifa.png",
-    description: "Built in Spring 2020, this was a fun project to help pass time during the COVID-19 lockdown. This single page site was made to track the custom teams created in a Playstation FIFA 20 league.",
-    technologies: "jQuery, SASS,  HTML, gulp",
-    notes: null,
+    title: "The League",
+    demoLink: "http://johnsaputo.net/fifa21/",
+    githubLink: "https://github.com/jsaputo1/the-league-2021",
+    thumbnail: "/images/thumbnails/the-league.png",
+    description: "Designed to mimic TheScore.ca this was a fun project to help pass time during the COVID-19 lockdown. This site was created to track scores and standings for a Playstation FIFA 20 league. The data on the site is pulled from a Google Sheet",
+    technologies: "CSS, jQuery, AJAX",
+    notes: "This was designed specifically for mobile.",
   },
 
   s4: {
@@ -38,14 +38,25 @@ const frontEndProjects = {
     description: "A website to showcase my projects. My portfolio was designed with React with all components custom developed using Storybook. It is responsive with views for Desktop, Tablet and Mobile.",
     technologies: "React, JavaScript, SASS, Storybook",
     notes: null,
-  }
+  },
+
+  s5: {
+    title: "Fifa Teams",
+    demoLink: "https://fifa-teams.johnsaputo.net/",
+    githubLink: null,
+    thumbnail: "/images/thumbnails/fifa.png",
+    description: "Built in Spring 2020, this was a fun project to help pass time during the COVID-19 lockdown. This single page site was made to track the custom teams created in a Playstation FIFA 20 league.",
+    technologies: "jQuery, SASS,  HTML, gulp",
+    notes: null,
+  },
+
 };
 
 const fullStackProjects = {
 
   s1: {
     title: "Scheduler",
-    demoLink: "https://www.johnsaputo.net/scheduler",
+    demoLink: "https://scheduler.johnsaputo.net/",
     githubLink: "https://github.com/jsaputo1/scheduler",
     thumbnail: "/images/thumbnails/scheduler.png",
     description: "The Interview Scheduler is a single page web app built with React that allows users to book, edit and cancel interviews. Testing was done with Jest and Cypress, components were created using Storybook. The site was deployed with Heroku and Netlify.",
@@ -65,7 +76,7 @@ const fullStackProjects = {
 
   s3: {
     title: "Tweeter",
-    demoLink: "https://www.johnsaputo.net/tweeter",
+    demoLink: "https://tweeter.johnsaputo.net/",
     githubLink: "https://github.com/jsaputo1/tweeter",
     thumbnail: "/images/thumbnails/tweeter.png",
     description: "Tweeter is a simple, single-page Twitter clone where users can post new tweets. The site is responsive with a mobile view. The app was deployed on Heroku.",
@@ -88,7 +99,7 @@ const wordPressProjects = {
 
   s1: {
     title: "Inhabitent",
-    demoLink: "https://www.johnsaputo.net/inhabitent",
+    demoLink: "https://inhabitent.johnsaputo.net/",
     githubLink: "https://github.com/jsaputo1/inhabitent",
     thumbnail: "/images/thumbnails/inhabitent.png",
     description: "Inabitent is a WordPress web store for outdoor/camping equipment. The theme was built from scratch and allows the site administrator to easily add/remove/edit content through WordPress without the need to code.",
@@ -106,15 +117,6 @@ const wordPressProjects = {
     notes: "New quotes can only be submitted by registered users. Registration has not been implemented yet, you are able to view the submit page but cannot register an account yet.",
   },
 
-  s3: {
-    title: "The League",
-    demoLink: "http://johnsaputo.net/theleague/",
-    githubLink: "https://github.com/jsaputo1/fifa-league",
-    thumbnail: "/images/thumbnails/the-league.png",
-    description: "Designed to mimic TheScore.ca this was a fun project to help pass time during the COVID-19 lockdown. This site was created to track scores and standings for a Playstation FIFA 20 league. Word Press is used as a content management system",
-    technologies: "WordPress, PHP, SASS, jQuery, gulp",
-    notes: "This was designed specifically for mobile.",
-  },
 };
 
 module.exports = { frontEndProjects, fullStackProjects, wordPressProjects };
