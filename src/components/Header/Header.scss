@@ -1,5 +1,10 @@
 @import "../../styles/shared.scss";
 
+.App-header {
+position: relative;
+}
+
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -13,9 +18,13 @@
   z-index: 1;
 }
 
+.is-sticky-header {
+  margin-top: 70px;
+}
+
 .sticky {
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
 }
 

@@ -88,7 +88,7 @@ const fullStackProjects = {
     title: "Tiny App",
     demoLink: null,
     githubLink: "https://github.com/jsaputo1/tinyapp",
-    thumbnail: "/images/thumbnails/tinyApp.png",
+    thumbnail: "/images/thumbnails/tinyapp.png",
     description: "TinyApp is a full stack web application that allows users to shorten long URLs, similar to bit.ly. Users are able to register an account which will allow them to view and manage previous entries. Testing was done with mocha and chai.",
     technologies: "JavaScript, EJS, CSS, HTML, Node, Express, Mocha, Chai",
     notes: " The app has not been deployed yet, please visit the GitHub link for screenshots",
@@ -109,7 +109,7 @@ const wordPressProjects = {
 
   s2: {
     title: "Quotes on Dev",
-    demoLink: "https://www.johnsaputo.net/qod",
+    demoLink: "https://qod.johnsaputo.net/",
     githubLink: "https://github.com/jsaputo1/quotesondev",
     thumbnail: "/images/thumbnails/qod.png",
     description: "Quotes on Dev is a multi page web app that shows random developer themed quotes, and allows registered users to submit their own quotes. The app uses Word Press as the content management system and is fully responsive with views for Desktop, Tablet and mobile.",

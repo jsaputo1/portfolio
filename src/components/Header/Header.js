@@ -4,16 +4,18 @@ import "./Header.scss";
 function Header(props) {
 
   window.onscroll = function () {
-    console.log(window.pageYOffset);
-    if (window.pageYOffset < 821) {
+    const body = document.body;
+    if (window.pageYOffset < 680) {
       props.setSticky(false);
+      body.classList.remove("is-sticky-header");
     }
-    else if (window.pageYOffset > 804) {
+    else if (window.pageYOffset > 680) {
       props.setSticky(true);
+      body.classList.add("is-sticky-header");
     }
   };
 
-  return <header className={props.sticky ? "header-container sticky slide-down" : "header-container"}>
+  return <header className={props.sticky ? "header-container sticky" : "header-container"}>
     <div className="left-side-header">
       <a href={props.headerLink}><h3>{props.title}</h3></a>
     </div>
